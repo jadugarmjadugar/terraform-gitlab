@@ -12,7 +12,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-# Create a VPC
+# Create a EC2
 resource "aws_instance" "web_server" {
   ami           = "ami-0ba9883b710b05ac6" # Replace with the desired AMI ID
   instance_type = 't2.micro'
